@@ -1,0 +1,41 @@
+port forwarding: it is phenomenon of changing the port number of a project
+
+why do we need to change the port number?
+when a server has multiple applications that are running the same base addr(ipaddr) to differentiate the projects and to make control to flow for both the projects
+if we dont do it control will always go for the first project that we have started(run)
+
+
+__file__=> this is a spl varible that gives the complete address of the file where we use it
+
+os=> os is maodule the contains all the operating system related instructions
+
+os.path.abspath(): is this is a function that gives us the absolute of a the file address
+os.path.abspath(__file__)
+
+os.path.dirname(): gives us the path path of the parent directory where the file or directory is present
+
+os.path.join(path1,path2): this is a function that gives us the path which the concatinated form of path 1 and path2 or this function is used to join paths
+
+
+#TEMPLATE_DIR="D:\\Project\\p3\\templates" should not be used because the project may or may not be there at the same location in all the servers and the path of representation in windows will vary from the path reprasentation in linux we will not be knowing which os is running
+
+#TEMPLATE_DIR=BASE_DIR+"\\templates" eventhough this representation gives u the path dynamically we dont use this because of the \ reprasentation [in windows we use \ but in linux or unix or mac we use /]
+
+TEMPLATE_DIR=os.path.join(BASE_DIR,"templates") this is the actual way of reprasenting the path of template_directory because here we neither give the path not concatinate the path in this scenario application itself is going generate and concatinate the path acoording to the os environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

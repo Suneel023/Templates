@@ -19,7 +19,7 @@ from Pro03 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.main,name="main"),
-    path('html_demo',views.html_demo,name="html_demo"),
-    path('html_demo2',views.html_demo2,name="html_demo2"),
+    path('main/',views.main,name="main"),
+    path('',views.home,name="home"),
+    path('second/',views.second,name="second"),
 ]

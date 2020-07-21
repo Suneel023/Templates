@@ -4,8 +4,8 @@ from django.shortcuts import render
 def main(request):
     return HttpResponse("Main Page of Django")
 
-def html_demo(request):
-    return render(request,"sample.html")
+def home(request):
+    return render(request,"first.html")
 
-def html_demo2(request):
-    return render(request,"sample2.html")
+def second(request):
+    return render(request,"webpages/second.html")
